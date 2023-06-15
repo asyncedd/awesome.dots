@@ -25,10 +25,13 @@ local lighter_lavender = color.lighten(mocha.lavender, 0.8, mocha.base)
 
 theme.fg_normal = color.lighten(mocha.lavender, 0.3, mocha.base)
 theme.fg_focus = lighter_lavender
-theme.fg_urgent = "#cdd6f4"
-theme.fg_minimize = "#cdd6f4"
+theme.fg_urgent = lighter_lavender
+theme.fg_minimize = lighter_lavender
 
-theme.useless_gap = dpi(0)
+theme.gaps = true
+
+theme.useless_gap = 10
+theme.gap_single_client = true
 theme.border_width = dpi(1)
 theme.border_normal = "#000000"
 theme.border_focus = "#535d6c"
